@@ -1,5 +1,6 @@
 .footer {
+    flex-shrink: 0;
     color: #545454;
-    display: flex;
-    width: 100%;
+    width: 88vw;
+    max-width: 882px;
 }

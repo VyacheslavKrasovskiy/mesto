@@ -1,0 +1,6 @@
+.button_type_like {
+    width: 20px;
+    height: 19px;
+    background-image: url(../../../images/heart.svg);
+    background-size: contain;
+}

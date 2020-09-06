@@ -1,4 +1,4 @@
-.button__submit {
+.button_type_submit {
     max-width: 358px;
     margin-top: 48px;
     margin-bottom: 36px;
@@ -7,17 +7,15 @@
     background-color: #000;
     color: #fff;
     border: none;
-    transition: 0.5;
 }
 
 @media screen and (max-width: 768px) {
-    .button__submit {
+    .button_type_submit {
         margin-top: 24px;
         margin-bottom: 18px;
     }
 }
 
-.button__submit:hover {
+.button_type_submit:hover {
     opacity: .8;
-    cursor: pointer;
 }

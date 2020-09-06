@@ -1,0 +1,8 @@
+.button_type_edit {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #fff;
+    background-image: url(../../../images/pen.svg);
+    margin-left: 19px;
+    box-sizing: border-box;
+}

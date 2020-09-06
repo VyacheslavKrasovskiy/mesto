@@ -11,9 +11,7 @@
 <body>
     <div class="page">
         <header class="header">
-            <div class="header__content">
                 <img class="header__logo" src="./images/logo.svg" alt="лого">
-            </div>
         </header>
         <main class="content">
             <section class="profile">
@@ -21,69 +19,69 @@
                 <div class="profile__info">
                         <div class="profile__head">
                             <h1 class="profile__title">Жак-Ив Кусто</h1>
-                            <button class="button__edit"></button>
+                            <button aria-label="редактировать" type="button" class="button button_type_edit"></button>
                         </div>
                     <p class="profile__subtitle">Исследователь океана</p>
                 </div>
-                <button class="button__add"></button>
+                <button aria-label="добавить" type="button" class="button button_type_add"></button>
             </section>
             <section class="gallery">
-                <div class="gallery__card">
+                <div class="card">
                     <img class="card__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="фото">
                     <div class="card__description">
                         <h2 class="card__subtitle">Карачевск</h2>
-                        <button class="button__like"></button>
+                        <button aria-label="нравится" type="button" class="button button_type_like"></button>
                     </div>
                 </div>
-                <div class="gallery__card">
+                <div class="card">
                     <img class="card__image" src="./images/kirill-pershin-1404681-unsplash.png" alt="фото">
                     <div class="card__description">
                         <h2 class="card__subtitle">Гора Эльбрус</h2>
-                        <button class="button__like"></button>
+                        <button aria-label="нравится" type="button" class="button button_type_like"></button>
                     </div>
                 </div>
-                <div class="gallery__card">
+                <div class="card">
                     <img class="card__image" src="./images/kirill-pershin-1556355-unsplash.png" alt="фото">
                     <div class="card__description">
                         <h2 class="card__subtitle">Домбай</h2>
-                        <button class="button__like"></button>
+                        <button aria-label="нравится" type="button" class="button button_type_like"></button>
                     </div>
                 </div>
-                <div class="gallery__card">
+                <div class="card">
                     <img class="card__image" src="./images/kirill-pershin-1404681-unsplash.png" alt="фото">
                     <div class="card__description">
                         <h2 class="card__subtitle">Гора Эльбрус</h2>
-                        <button class="button__like"></button>
+                        <button aria-label="нравится" type="button" class="button button_type_like"></button>
                     </div>
                 </div>
-                <div class="gallery__card">
+                <div class="card">
                     <img class="card__image" src="./images/kirill-pershin-1556355-unsplash.png" alt="фото">
                     <div class="card__description">
                         <h2 class="card__subtitle">Домбай</h2>
-                        <button class="button__like"></button>
+                        <button aria-label="нравится" type="button" class="button button_type_like"></button>
                     </div>
                 </div>
-                <div class="gallery__card">
+                <div class="card">
                     <img class="card__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="фото">
                     <div class="card__description">
                         <h2 class="card__subtitle">Карачаево-Черкессия</h2>
-                        <button class="button__like"></button>
+                        <button aria-label="нравится" type="button" class="button button_type_like"></button>
                     </div>
                 </div>
             </section>
-            <section class="popup">
-                <form class="popup__container">
-                    <h2 class="popup__title">Редактировать профиль</h2>
-                    <input type="text" class="popup__text popup__text_name">
-                    <input type="text" class="popup__text popup__text_job">
-                    <button class="button__submit">Сохранить</button>
-                    <button class="button__close"></button>
-                </form>
-            </section>
-            <footer class="footer">
-                <h2 class="footer__copyright">© 2020 Mesto Russia</h2>
-            </footer>
         </main>
+        <footer class="footer">
+            <h2 class="footer__copyright">© 2020 Mesto Russia</h2>
+        </footer>
+        <div class="popup">
+            <form name="popup" class="popup__container">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <input required placeholder="Как тебя зовут?" name="input_name" type="text" class="popup__text popup__text_type_name">
+                <input required placeholder="Чем ты занимаешься?" name="input_job" type="text" class="popup__text popup__text_type_job">
+                <button type="submit" class="button button_type_submit">Сохранить</button>
+                <button aria-label="закрыть" type="button" class="button button_type_close"></button>
+            </form>
+        </div>
     </div>
 <script src="./scripts/script.js"></script>
 </body>
